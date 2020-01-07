@@ -1,0 +1,425 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Amazon Home page validation",
+        "description": "",
+        "id": "amazon-application-smoke-test-cases;amazon-home-page-validation",
+        "after": [
+          {
+            "result": {
+              "duration": 498500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17724656500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the amazon application",
+            "match": {
+              "location": "StepDefinition.user_Launch_the_amazon_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30857174300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User verify the amazon logo present in the page",
+            "match": {
+              "location": "StepDefinition.user_verify_the_amazon_logo_present_in_the_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28274700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User verify the amazon page title",
+            "match": {
+              "location": "StepDefinition.user_verify_the_amazon_page_title()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201867500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should see search feild present in the page",
+            "match": {
+              "location": "StepDefinition.user_should_see_search_feild_present_in_the_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Amazon search functionality validations",
+        "description": "",
+        "id": "amazon-application-smoke-test-cases;amazon-search-functionality-validations;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3216739000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20919999700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter \"Mobile\" in the search feild",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.user_enter_in_the_search_feild(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13722693000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on search button",
+            "match": {
+              "location": "StepDefinition.user_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 282558700,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Mobile]\u003e but was:\u003c[\"Mobile\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.cucumber.stepdefinition.StepDefinition.user_should_see_the_in_the_search_result_page_header(StepDefinition.java:65)\r\n\tat ✽.Then User should see the \"Mobile\" in the search result page header(SnapDeal.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "User should see the \"Mobile\" in the search result page header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.user_should_see_the_in_the_search_result_page_header(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Amazon search functionality validations",
+        "description": "",
+        "id": "amazon-application-smoke-test-cases;amazon-search-functionality-validations;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1998692000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 582216100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter \"Laptop\" in the search feild",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Laptop",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.user_enter_in_the_search_feild(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4891336000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on search button",
+            "match": {
+              "location": "StepDefinition.user_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99719900,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Laptop]\u003e but was:\u003c[\"Laptop\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.cucumber.stepdefinition.StepDefinition.user_should_see_the_in_the_search_result_page_header(StepDefinition.java:65)\r\n\tat ✽.Then User should see the \"Laptop\" in the search result page header(SnapDeal.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "User should see the \"Laptop\" in the search result page header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Laptop",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.user_should_see_the_in_the_search_result_page_header(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Amazon Menu navigation functionality validation",
+        "description": "",
+        "id": "amazon-application-smoke-test-cases;amazon-menu-navigation-functionality-validation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 57000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3259023500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click on Amazon Hamburger menu bar",
+            "match": {
+              "location": "StepDefinition.user_click_on_Amazon_Hamburger_menu_bar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175615000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click on main menu \"Men\u0027s Fashion\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Men\u0027s Fashion",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition.user_click_on_main_menu(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3853384100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click on sub menu \"Shirts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shirts",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_click_on_sub_menu(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1836624000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should see the \"SHIRT\" in the landing page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SHIRT",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.user_should_see_the_in_the_landing_page(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Amazon Menu navigation functionality validation",
+        "description": "",
+        "id": "amazon-application-smoke-test-cases;amazon-menu-navigation-functionality-validation;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 50800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1638100200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click on Amazon Hamburger menu bar",
+            "match": {
+              "location": "StepDefinition.user_click_on_Amazon_Hamburger_menu_bar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 297867600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click on main menu \"Women\u0027s Fashion\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Women\u0027s Fashion",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition.user_click_on_main_menu(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5869075100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click on sub menu \"Watches\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Watches",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_click_on_sub_menu(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1778508300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should see the \"WATCHES\" in the landing page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WATCHES",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.user_should_see_the_in_the_landing_page(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon application smoke test cases",
+    "description": "",
+    "id": "amazon-application-smoke-test-cases",
+    "keyword": "Feature",
+    "uri": "SnapDeal.feature"
+  }
+]

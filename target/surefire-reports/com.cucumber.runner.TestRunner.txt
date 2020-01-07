@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 153.274 s <<< FAILURE! - in com.cucumber.runner.TestRunner
+| Mobile |.Then User should see the "Mobile" in the search result page header  Time elapsed: 0.02 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Mobile]> but was:<["Mobile"]>
+
+| Mobile |  Time elapsed: 0.021 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Mobile]> but was:<["Mobile"]>
+
+| Laptop |.Then User should see the "Laptop" in the search result page header  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Laptop]> but was:<["Laptop"]>
+
+| Laptop |  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Laptop]> but was:<["Laptop"]>
+
